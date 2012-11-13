@@ -6,9 +6,15 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body>
+<%= render :template => "layouts/header" %>
+
+
+<div class="container">
 <%= yield %>
+<%= render :template => "layouts/footer" %>
+</div>
 
 </body>
 </html>
